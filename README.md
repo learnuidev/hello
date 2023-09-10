@@ -3,6 +3,14 @@
 hello is an open-source notion-style based AI-powered language learning app.
 
 
+## Key Stack
+
+- UI Framework: Svelte + Svelte KIT
+- Styling: tailwindcss
+- UI Components: chadcn-svelte
+- Accessibility: chadcn-svelte
+- Editor: tiptap
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
