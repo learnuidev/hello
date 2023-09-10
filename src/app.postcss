@@ -1,6 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ProseMirror {
+  /* @apply p-12 px-8 sm:px-12; */
+
+
+  &:focus {
+    outline: none
+  }
+
+  & h1 {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+
+  & h2 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  & h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  & li {
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    & h1 {
+        font-size: 2rem;
+        font-weight: 800;
+      }
+    & h2 {
+        font-size: 1.6rem;
+        font-weight: 800;
+      }
+  }
+}
+
+
+.ProseMirror .is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: gray;
+  /* color: var(--novel-stone-100); */
+  pointer-events: none;
+  height: 0;
+}
+.ProseMirror .is-empty::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: gray;
+  /* color: blue; */
+  /* color: var(--novel-stone-100); */
+  pointer-events: none;
+  height: 0;
+}
+
+
+
  
 @layer base {
   :root {

@@ -1,6 +1,6 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import { Button } from "$lib/components/ui/button";
-  </script>
+  </script> -->
 
 <svelte:head>
 	<title>About</title>
@@ -11,30 +11,20 @@
 
 <div class="text-column">
 
-	<div class="flex justify-end">
+	<!-- <div class="flex justify-end">
 		<Button 
 		on:click={() => {
 			alert('it works')
 		}}
 		class="">Hello world</Button>
-	</div>
+	</div> -->
 	<h1>About this app</h1>
 
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
+
+
+	<p class="my-4">
+		<strong>svnote</strong> is an open-source Notion-style WYSIWYG editor + AI-powered language learning app.
 	</p>
 
-	<pre>npm create svelte@latest</pre>
 
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
-	</p>
 </div>
