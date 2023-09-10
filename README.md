@@ -1,4 +1,4 @@
-# hello
+# hello | 你好
 
 hello is an open-source notion-style based AI-powered language learning app.
 
